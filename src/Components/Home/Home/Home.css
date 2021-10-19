@@ -1,0 +1,6 @@
+.hospital-header {
+  color: darkcyan;
+}
+.hospital-header:hover {
+  color: rgb(24, 124, 211);
+}
