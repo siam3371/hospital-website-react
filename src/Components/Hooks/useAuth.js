@@ -23,9 +23,12 @@ initializeAuthentication()
     // google register
     const googleSingIn = () =>   {
    const googleProvider = new GoogleAuthProvider();  
-       signInWithPopup(auth, googleProvider)
+     return  signInWithPopup(auth, googleProvider)
    .then((result) => {
         setUser(result.user);
+    })
+    .catch(error => {
+      console.log(error.massage) 
     })
    } 
   const auth = getAuth(); 
@@ -85,7 +88,7 @@ initializeAuthentication()
        setLoading(false) 
      })
      return (() =>unsubscribed   )
-   }, [])
+   },[])
   //  log out
     const logOut = () => {
       setLoading(true)

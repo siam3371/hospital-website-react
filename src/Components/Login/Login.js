@@ -1,13 +1,13 @@
 import React, { } from 'react'; 
- import UseAuthContext from '../Hooks/UseAuthContext';
+   import UseAuthContext from '../Hooks/UseAuthContext';
   const Login = () => { 
     // using destructuring  
       const {handleEmail, handlePassword, handleEmailAndPassword,  googleSingIn, error, user,  handleName} =  UseAuthContext() ;  
-     return (
+       return (
         <div>
-            <div className="container"> 
-            {/* ternary operator */}
-            {
+                         <div className="container">  
+{/* ternary operator */}
+             {
               user.email ?            <form onSubmit={handleEmailAndPassword}>
               <h1>Please Login</h1> 
 <div className="row mb-3">
@@ -51,7 +51,7 @@ import React, { } from 'react';
    
 {/* google login button */}
   <div className="text-center">
-  <div className="w-25 btn btn-warning" onClick={ googleSingIn} >Google Sign In</div>
+  <button className="w-25 btn btn-warning" onClick={ googleSingIn} >Google Sign In</button>
   </div>
         </div>
         </div>
