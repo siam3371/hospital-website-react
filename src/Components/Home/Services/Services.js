@@ -3,8 +3,9 @@ import React, {} from 'react';
   import ServicesItem from '../ServicesItem/ServicesItem';
 import './Services.css'
 const Services = () => { 
- const {services} = UseAuthContext();      
-  
+   // auth context use
+ const {services} = UseAuthContext();       
+
     return ( 
       //  most powerful services in our general hospital 
         <div className="services-container mt-5">
@@ -16,7 +17,7 @@ const Services = () => {
                  name={service.name}
                  img={service.img}
                  describe={service.describe} 
-                 ></ServicesItem> 
+                 ></ServicesItem>
               )}
            </div>
     );

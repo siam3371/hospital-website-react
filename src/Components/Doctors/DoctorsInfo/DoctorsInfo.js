@@ -14,10 +14,10 @@ const DoctorsInfo = (props) => {
   <div className="card-body">
     <h2>{name}</h2>
     <p>{describe}</p>
-    <p>{email}</p>  <p className="ms-5 text-center"> <i class="fab fa-facebook icon-doctor mt-0"></i>
-        <i class="fab fa-twitter icon-doctor"></i>
-        <i class="fab fa-instagram icon-doctor"></i>
-        <i class="fab fa-google-plus-g icon-doctor"></i></p>
+    <p>{email}</p>  <p className="ms-5 text-center"> <i className="fab fa-facebook icon-doctor mt-0"></i>
+        <i className="fab fa-twitter icon-doctor"></i>
+        <i className="fab fa-instagram icon-doctor"></i>
+        <i className="fab fa-google-plus-g icon-doctor"></i></p>
    </div>
 </div>
             </div></>

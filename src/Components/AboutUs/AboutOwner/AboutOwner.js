@@ -15,9 +15,9 @@ const AboutOwner = () => {
         </div>
       <div className="fs-5">
         {/* font awsome */}
-      <i class="fab fa-facebook m-2 icon"></i>
-        <i class="fab fa-twitter m-2 icon"></i>
-        <i class="fab fa-instagram m-2 icon"></i>
+      <i className="fab fa-facebook m-2 icon"></i>
+        <i className="fab fa-twitter m-2 icon"></i>
+        <i className="fab fa-instagram m-2 icon"></i>
       </div>
           </div>
           <div className="col-lg-5 col-12 col-md-6 ">
