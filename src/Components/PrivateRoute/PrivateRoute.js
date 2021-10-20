@@ -3,10 +3,8 @@ import React from 'react';
  import UseAuthContext from '../Hooks/UseAuthContext';
 
 const PrivateRoute = ({children, ...rest }) => {
-     const {email,isLoading } = UseAuthContext() 
- 
-     return (
-        
+     const {email,isLoading } = UseAuthContext()  
+     return ( 
         <div>
              <Route
       {...rest}
