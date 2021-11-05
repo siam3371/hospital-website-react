@@ -9,12 +9,12 @@ const Bannar = () => {
     <Carousel.Item>
         <img
             className="d-block w-100"
-            src='https://i.ibb.co/dbtJdVb/Doctor-asking-nurse-for-pills-during-consultation-in-medical-office-Physician-specialist-in-medicine.jpg'
+            src='https://i.ibb.co/NVfwyR3/adhy-savala-zbpgm-Ge27p8-unsplash-1.jpg'
             alt="First slide"
         />
         <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Simple Conversation Between Doctor and Patient About Headache </p>
+            <h3>1</h3>
+            <p>Our Hospital is a largest Hospital in the world </p>
         </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -25,8 +25,8 @@ const Bannar = () => {
         />
 
         <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p> 10 golden communication tips for doctors. And 3 things they shouldn't do.
+            <h3>1</h3>
+            <p> this is our hospital in the bigest
 </p>
         </Carousel.Caption>
     </Carousel.Item>
@@ -38,8 +38,9 @@ const Bannar = () => {
         />
 
         <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>using quotation marks around the speaker's exact words. These quotation marks are meant to set the dialogue</p>
+            <h3>3</h3>
+            <p>noun. an institution in which sick or injured persons are given medical or surgical treatment. a similar establishment for the care of animals.
+</p>
         </Carousel.Caption>
     </Carousel.Item>
 </Carousel>

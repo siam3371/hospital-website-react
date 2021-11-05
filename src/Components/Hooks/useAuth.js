@@ -2,11 +2,16 @@
  import { getAuth, createUserWithEmailAndPassword, signInWithPopup,GoogleAuthProvider, sendEmailVerification,signOut ,onAuthStateChanged, updateProfile  } from "firebase/auth";
 import initializeAuthentication from '../../Firebase/Firebase.confing'; 
 initializeAuthentication()
- const useAuth = () => {
-   //  this is services data 
+ const useAuth = () => {  
+
+  //  this is services data 
    const [services, setServices] = useState([])
    const [isLoading, setLoading] = useState(true);
+   const [user, setUser] = useState({}) 
+  // google login
+
    // fake data loading
+   const googleProvider = new GoogleAuthProvider();   
    useEffect(()=> {
        setLoading(true);
        fetch('../services.json')
@@ -16,21 +21,11 @@ initializeAuthentication()
    },[]) 
 //    using firebase
    const [error, setError] = useState('') 
-    const [user, setUser] = useState({})
-    const [email, setEmail] = useState('')
+     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('') 
     const [name, setName] = useState('') 
     // google register
-    const googleSingIn = () =>   {
-   const googleProvider = new GoogleAuthProvider();  
-     return  signInWithPopup(auth, googleProvider)
-   .then((result) => {
-        setUser(result.user);
-    })
-    .catch(error => {
-      console.log(error.massage) 
-    })
-   } 
+
   const auth = getAuth(); 
 
    const handleEmail = (e) => {
@@ -39,6 +34,11 @@ initializeAuthentication()
   const handlePassword = (e) => {
       setPassword(e.target.value)
   } 
+
+   const googleSingIn = () =>   {
+    return  signInWithPopup(auth, googleProvider) 
+    } 
+  // end google login
   const handleName = (e) => {
     setName(e.target.value) 
   }
@@ -95,9 +95,10 @@ initializeAuthentication()
       signOut(auth).then(() => { })
       .finally(()=> setLoading(false))
     }
+  
 // return the useAuth
-      return  {handleEmail, handlePassword, handleEmailAndPassword, logOut, googleSingIn,handleName,verifyEmail, user,email, error ,services,
-         isLoading,}
+      return  {handleEmail, handlePassword, handleEmailAndPassword, logOut, setLoading ,handleName,verifyEmail, user,email, error ,services,
+         isLoading, googleSingIn , setUser }
  };
  
  export default useAuth;

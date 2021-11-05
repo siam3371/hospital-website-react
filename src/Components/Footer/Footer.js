@@ -21,9 +21,7 @@ const Footer = () => {
              <div className="footer-information">
              <p>Dr. Luke Slater</p>
                  <p>Dr. Rebecca Heston</p>
-                 <p>Dr. Nicole Jennings</p>
-                 <p>Dr. Andrew Cross</p>
-                 <p>Dr. John Banks</p>
+                  <p>Dr. John Banks</p>
                  <p>Dr. William Brown</p>
              </div>
              </div>
@@ -31,8 +29,7 @@ const Footer = () => {
            <div className="footer-information">
            <p>Neurology Clinic</p>
              <p>Ophthalmology Clinic</p>
-             <p>Laryngological Clinic</p>
-             <p>Orthopaedic Clinic</p>
+              <p>Orthopaedic Clinic</p>
              <p>Pulmonary Clinic</p>
              <p>Hepatology Clinic</p>
            </div>
@@ -42,8 +39,7 @@ const Footer = () => {
                 <div className="footer-information">
                 <p>Mon – Thu 7.00 – 20.00</p>
                  <p>Friday 7.00 – 19.00</p>
-                 <p>Saturday 9.00 – 16.00</p>
-                 <p>Sunday 9.00 – 13.00</p>
+                  <p>Sunday 9.00 – 13.00</p>
                 </div>
              </div>
          </div>

@@ -1,7 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-  import './ServicesItem.css'
+   import './ServicesItem.css'
+  import { useHistory } from 'react-router';
+
 const ServicesItem = (props) => {  
+  const history = useHistory();
+   
+  const handleDetails = (key) => {
+          const uri = `/services/${key}`;
+         console.log(uri)
+         history.push(uri) 
+ } 
          return ( 
       <> 
       <div>
@@ -10,7 +18,7 @@ const ServicesItem = (props) => {
       <img className="w-100" src={props.img} alt="" />
       <h3>{props.name}</h3>
     <p>{props.describe}</p> 
-    <Link  to={`/services/${props.id}`}><button className="btn-regular">Add Details</button></Link>
+     <button className="btn-regular" onClick={() => handleDetails(props.id)}>Add Details</button> 
     </div> 
         </div>
       </>

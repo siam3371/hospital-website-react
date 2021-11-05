@@ -6,8 +6,7 @@ const Home = () => {
     return (
         <div>
             {/* website home page */}
-            <h1 className="hospital-header text-center">Welcome to our general hospital</h1>
-          <Bannar></Bannar>
+           <Bannar></Bannar>
           <Services></Services>
         </div>
     );

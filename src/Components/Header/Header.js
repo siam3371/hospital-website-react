@@ -19,6 +19,7 @@ const Header = () => {
     <Nav.Link as={Link} to="/home"  className="brand">Home</Nav.Link>
       <Nav.Link as={Link} to="/aboutUs" className="brand">About Us</Nav.Link>
       <Nav.Link as={Link} to="/doctors" className=" brand ">Doctors</Nav.Link>
+      <Nav.Link as={Link} to="/Contact" className=" brand ">Contact</Nav.Link>
       <Navbar.Text>
         {/* {user.email ? <button>LogOut</button> : ''  } */}
         {user.email ?   <Button onClick={logOut} variant="light">LogOut</Button> :    <button className="light">Login</button>   }
