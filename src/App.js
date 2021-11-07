@@ -18,20 +18,14 @@ function App() {
     <div>
       <AuthProvider>
         <Router>
-          <Header></Header>
-          <Switch>
+           <Switch>
             <Route exact path="/">
               <Home></Home>
-              <AboutUs></AboutUs> 
-              <Doctors></Doctors>
-              <Contact></Contact> 
-            </Route>
+              </Route>
             <Route path="/home">
               <Home></Home>
                <AboutUs></AboutUs>
-               <Doctors></Doctors>
-               <Contact></Contact> 
-            </Route>
+             </Route>
             <Route path='/Contact'>
         <Contact></Contact> 
               </Route>
@@ -49,10 +43,7 @@ function App() {
               </Route>
             <PrivateRoute  path="/services/:detail">
               <ServicesDetail></ServicesDetail>
-               </PrivateRoute> 
-            <Route path="*">
-              <NotFound></NotFound>
-            </Route>
+               </PrivateRoute>  
           </Switch>
           <Footer></Footer>
         </Router>
